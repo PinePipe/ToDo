@@ -1,0 +1,91 @@
+.wrapper {
+    height: 100vh; /*на весь экран вне зависимостей, vh - для высоты*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 650px;
+    height: 800px;
+    background: #E6E6E6;
+    border-radius: 15px;
+    padding: 45px 60px;
+    display: grid;
+    grid-template-rows: 66px 711px; /*в этом диве есть две строки и это их высоты*/
+    gap: 22px;
+}
+
+.app__controls {
+    display: grid;
+    grid-template-columns: auto 160px; /*в этом диве есть два блока и это их длины*/
+}
+
+.app__controls-input {
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.app__controls-input:focus-visible {
+    outline: none;
+}
+
+.app__controls-button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #FBCC28;
+    font-size: 18px;
+}
+
+.app__list {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+}
+
+.app__list-item {
+    background-color: #FFEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.app__list-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.app__list-text {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.app__list-btn {
+    background: none;
+    border: none;
+    border-radius: 5px;
+     
+}
+
+.app__list-btn:hover{
+    background: red;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.app__list-item_done {
+    background-color: #EBFFED;
+    text-decoration: line-through;
+}
